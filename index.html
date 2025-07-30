@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Card Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-yellow-300 p-4 shadow-md">
+    <div class="max-w-5xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Pokémon Card Shop</h1>
+      <nav>
+        <ul class="flex gap-4">
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#" class="hover:underline">About</a></li>
+          <li><a href="#" class="hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto py-10 px-4">
+    <section class="bg-white p-6 rounded-xl shadow-md">
+      <h2 class="text-xl font-bold mb-4">Today's Featured Product</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <img src="https://images.pokemontcg.io/swsh6/190_hires.png" alt="Featured Product" class="rounded-lg">
+        <div>
+          <h3 class="text-lg font-semibold">Chilling Reign Elite Trainer Box</h3>
+          <p class="mt-2 text-sm text-gray-600">Includes 8 booster packs, 65 card sleeves, and more. A perfect bundle for collectors and players!</p>
+          <p class="mt-4 text-xl font-bold">€49.99</p>
+          <button class="mt-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">Buy Now</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-xl font-bold mb-4">Categories</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-white p-4 rounded-lg shadow text-center">ETBs</div>
+        <div class="bg-white p-4 rounded-lg shadow text-center">Booster Boxes</div>
+        <div class="bg-white p-4 rounded-lg shadow text-center">Single Cards</div>
+        <div class="bg-white p-4 rounded-lg shadow text-center">Accessories</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-yellow-300 p-4 mt-12 text-center">
+    <p>&copy; 2025 Pokémon Card Shop. Not affiliated with The Pokémon Company.</p>
+  </footer>
+</body>
+</html>
