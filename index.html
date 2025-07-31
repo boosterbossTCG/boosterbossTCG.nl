@@ -5,23 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pokémon Card Shop</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212; /* Dark background */
+      color: #f1f1f1; /* Light text */
+    }
+    header {
+      background-color: #333; /* Dark header */
+      color: #e60000; /* Red accent for logo */
+    }
+    footer {
+      background-color: #333; /* Dark footer */
+      color: #f1f1f1; /* Light text in footer */
+    }
+    .section-title {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+    .section-text {
+      color: #d1d1d1;
+      text-align: center;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body>
+
+  <!-- Header Section with Navigation -->
   <header class="bg-yellow-300 p-4 shadow-md">
     <div class="max-w-5xl mx-auto flex justify-between items-center">
       <h1 class="text-2xl font-bold">Pokémon Card Shop</h1>
+      <img src="path/to/your-image.png" alt="YouTube Channel" class="w-16 h-16 rounded-full">
       <nav>
         <ul class="flex gap-4">
-          <li><a href="#" class="hover:underline">Home</a></li>
-          <li><a href="#" class="hover:underline">About</a></li>
-          <li><a href="#" class="hover:underline">Contact</a></li>
+          <li><a href="#home" class="hover:underline">Home</a></li>
+          <li><a href="#over-ons" class="hover:underline">Over ons</a></li>
+          <li><a href="#aanbod" class="hover:underline">Aanbod</a></li>
+          <li><a href="#grading" class="hover:underline">Grading via Beckett</a></li>
+          <li><a href="#inkoop" class="hover:underline">Inkoop van Pokemon spullen</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <!-- Main Content -->
   <main class="max-w-4xl mx-auto py-10 px-4">
-    <section class="bg-white p-6 rounded-xl shadow-md">
+
+    <!-- Home Section -->
+    <section id="home" class="py-10">
+      <h2 class="section-title text-2xl font-bold">Welcome to Pokémon Card Shop</h2>
+      <p class="section-text">Explore our exclusive collection of Pokémon cards and related products!</p>
+    </section>
+
+    <!-- Over Ons Section -->
+    <section id="over-ons" class="py-10">
+      <h2 class="section-title">Over ons</h2>
+      <p class="section-text">We are passionate about providing high-quality Pokémon products to collectors and players worldwide.</p>
+    </section>
+
+    <!-- Aanbod Section -->
+    <section id="aanbod" class="py-10 bg-gray-800">
+      <h2 class="section-title">Aanbod</h2>
+      <p class="section-text">Check out our amazing offerings, including ETBs, Booster Boxes, Single Cards, and more!</p>
+    </section>
+
+    <!-- Grading Section -->
+    <section id="grading" class="py-10">
+      <h2 class="section-title">Grading via Beckett</h2>
+      <p class="section-text">We provide Beckett Grading services to ensure your Pokémon cards are preserved and graded professionally.</p>
+    </section>
+
+    <!-- Inkoop Section -->
+    <section id="inkoop" class="py-10 bg-gray-800">
+      <h2 class="section-title">Inkoop van Pokemon spullen</h2>
+      <p class="section-text">Interested in selling your Pokémon items? Learn how you can sell to us and get great offers!</p>
+    </section>
+
+    <!-- Featured Product Section -->
+    <section class="bg-white p-6 rounded-xl shadow-md mt-12">
       <h2 class="text-xl font-bold mb-4">Today's Featured Product</h2>
       <div class="grid md:grid-cols-2 gap-6">
         <img src="https://images.pokemontcg.io/swsh6/190_hires.png" alt="Featured Product" class="rounded-lg">
@@ -34,8 +95,9 @@
       </div>
     </section>
 
+    <!-- Categories Section -->
     <section class="mt-12">
-      <h2 class="text-xl font-bold mb-4">Categories</h2>
+      <h2 class="text-xl font-bold mb-4 text-center text-white">Categories</h2>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div class="bg-white p-4 rounded-lg shadow text-center">ETBs</div>
         <div class="bg-white p-4 rounded-lg shadow text-center">Booster Boxes</div>
@@ -43,10 +105,13 @@
         <div class="bg-white p-4 rounded-lg shadow text-center">Accessories</div>
       </div>
     </section>
+
   </main>
 
+  <!-- Footer Section -->
   <footer class="bg-yellow-300 p-4 mt-12 text-center">
     <p>&copy; 2025 Pokémon Card Shop. Not affiliated with The Pokémon Company.</p>
   </footer>
+
 </body>
 </html>
