@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +7,38 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     body {
-      background-color: #121212; /* Dark background */
-      color: #f1f1f1; /* Light text */
+      background-color: #121212; /* Donkere achtergrond */
+      color: #f1f1f1; /* Lichtgrijze tekst */
+      font-family: 'Arial', sans-serif; /* Schone en leesbare font */
     }
     header {
-      background-color: #333; /* Dark header */
-      color: #e60000; /* Red accent for logo */
+      background-color: #333; /* Donkere header */
+      color: #e60000; /* Rode accentkleur voor logo */
     }
     footer {
-      background-color: #333; /* Dark footer */
-      color: #f1f1f1; /* Light text in footer */
+      background-color: #333; /* Donkere footer */
+      color: #f1f1f1;
+    }
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .nav-links a {
+      font-size: 24px; /* Grotere tekst voor tabs */
+      font-weight: bold; /* Dikke tekst */
+      color: white;
+      text-decoration: none;
+      padding: 20px;
+      border: 2px solid white;
+      border-radius: 8px;
+      transition: all 0.3s;
+    }
+    .nav-links a:hover {
+      background-color: #e60000; /* Hover effect */
+      color: #f1f1f1;
     }
     .section-title {
       text-align: center;
@@ -27,90 +49,71 @@
       color: #d1d1d1;
       text-align: center;
     }
+    .pokemon-image {
+      width: 300px;
+      margin: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .pokemon-image:hover {
+      transform: scale(1.1);
+    }
   </style>
 </head>
 <body>
 
-  <!-- Header Section with Navigation -->
-  <header class="bg-yellow-300 p-4 shadow-md">
-    <div class="max-w-5xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Pokémon Card Shop</h1>
-      <img src="path/to/your-image.png" alt="YouTube Channel" class="w-16 h-16 rounded-full">
-      <nav>
-        <ul class="flex gap-4">
-          <li><a href="#home" class="hover:underline">Home</a></li>
-          <li><a href="#over-ons" class="hover:underline">Over ons</a></li>
-          <li><a href="#aanbod" class="hover:underline">Aanbod</a></li>
-          <li><a href="#grading" class="hover:underline">Grading via Beckett</a></li>
-          <li><a href="#inkoop" class="hover:underline">Inkoop van Pokemon spullen</a></li>
-        </ul>
-      </nav>
+  <!-- Header Section met Navigatie -->
+  <header class="p-4 shadow-md">
+    <div class="max-w-5xl mx-auto text-center">
+      <h1 class="text-3xl font-bold">Pokémon Card Shop</h1>
+      <div class="nav-links">
+        <a href="home.html">Over Ons</a>
+        <a href="winkel.html">Winkel</a>
+        <a href="grading.html">Grading via Beckett</a>
+        <a href="youtube.html">YouTube en Blogs</a>
+        <a href="inkoop.html">Inkoop</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
   </header>
 
-  <!-- Main Content -->
+  <!-- Hoofdinhoud -->
   <main class="max-w-4xl mx-auto py-10 px-4">
 
-    <!-- Home Section -->
-    <section id="home" class="py-10">
-      <h2 class="section-title text-2xl font-bold">Welcome to Pokémon Card Shop</h2>
-      <p class="section-text">Explore our exclusive collection of Pokémon cards and related products!</p>
+    <!-- Startpagina / Welkomstbericht -->
+    <section id="home">
+      <h2 class="section-title text-3xl font-bold">Welkom bij Pokémon Card Shop</h2>
+      <p class="section-text">Verken onze exclusieve collectie van Pokémonkaarten en gerelateerde producten!</p>
     </section>
 
-    <!-- Over Ons Section -->
-    <section id="over-ons" class="py-10">
-      <h2 class="section-title">Over ons</h2>
-      <p class="section-text">We are passionate about providing high-quality Pokémon products to collectors and players worldwide.</p>
-    </section>
-
-    <!-- Aanbod Section -->
-    <section id="aanbod" class="py-10 bg-gray-800">
-      <h2 class="section-title">Aanbod</h2>
-      <p class="section-text">Check out our amazing offerings, including ETBs, Booster Boxes, Single Cards, and more!</p>
-    </section>
-
-    <!-- Grading Section -->
-    <section id="grading" class="py-10">
-      <h2 class="section-title">Grading via Beckett</h2>
-      <p class="section-text">We provide Beckett Grading services to ensure your Pokémon cards are preserved and graded professionally.</p>
-    </section>
-
-    <!-- Inkoop Section -->
-    <section id="inkoop" class="py-10 bg-gray-800">
-      <h2 class="section-title">Inkoop van Pokemon spullen</h2>
-      <p class="section-text">Interested in selling your Pokémon items? Learn how you can sell to us and get great offers!</p>
-    </section>
-
-    <!-- Featured Product Section -->
-    <section class="bg-white p-6 rounded-xl shadow-md mt-12">
-      <h2 class="text-xl font-bold mb-4">Today's Featured Product</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <img src="https://images.pokemontcg.io/swsh6/190_hires.png" alt="Featured Product" class="rounded-lg">
-        <div>
-          <h3 class="text-lg font-semibold">Chilling Reign Elite Trainer Box</h3>
-          <p class="mt-2 text-sm text-gray-600">Includes 8 booster packs, 65 card sleeves, and more. A perfect bundle for collectors and players!</p>
-          <p class="mt-4 text-xl font-bold">€49.99</p>
-          <button class="mt-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">Buy Now</button>
-        </div>
+    <!-- Pokémon Afbeeldingen -->
+    <section class="text-center mt-10">
+      <h2 class="section-title text-2xl font-bold">Populaire Pokémonkaarten</h2>
+      <div class="flex flex-wrap justify-center">
+        <img src="https://images.pokemontcg.io/sv1/001.png" alt="Pikachu" class="pokemon-image">
+        <img src="https://images.pokemontcg.io/sv1/002.png" alt="Charizard" class="pokemon-image">
+        <img src="https://images.pokemontcg.io/sv1/003.png" alt="Bulbasaur" class="pokemon-image">
+        <img src="https://images.pokemontcg.io/sv1/004.png" alt="Squirtle" class="pokemon-image">
       </div>
     </section>
 
-    <!-- Categories Section -->
-    <section class="mt-12">
-      <h2 class="text-xl font-bold mb-4 text-center text-white">Categories</h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="bg-white p-4 rounded-lg shadow text-center">ETBs</div>
-        <div class="bg-white p-4 rounded-lg shadow text-center">Booster Boxes</div>
-        <div class="bg-white p-4 rounded-lg shadow text-center">Single Cards</div>
-        <div class="bg-white p-4 rounded-lg shadow text-center">Accessories</div>
+    <!-- YouTube Kanaal Sectie -->
+    <section id="youtube" class="mt-10">
+      <h2 class="section-title text-2xl font-bold">Volg ons op YouTube!</h2>
+      <p class="section-text">Bekijk onze Pokémonkaart video's en blijf op de hoogte van de nieuwste updates!</p>
+      <div class="text-center">
+        <a href="https://youtube.com/@boosterbosstcg?si=l2FciO42qV-WrgLt" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/600px-YouTube_icon_%282013-2017%29.png" alt="YouTube Logo" class="w-32 mx-auto mt-4">
+        </a>
+        <p class="mt-2 text-white">Klik hier om ons YouTube-kanaal te bezoeken!</p>
       </div>
     </section>
 
   </main>
 
-  <!-- Footer Section -->
-  <footer class="bg-yellow-300 p-4 mt-12 text-center">
-    <p>&copy; 2025 Pokémon Card Shop. Not affiliated with The Pokémon Company.</p>
+  <!-- Footer Sectie -->
+  <footer class="p-4 mt-12 text-center">
+    <p>&copy; 2025 Pokémon Card Shop. Niet geassocieerd met The Pokémon Company.</p>
   </footer>
 
 </body>
